@@ -1,0 +1,20 @@
+.button{
+    text-align: center; 
+}
+.button input{
+    padding: 5px 20px;
+    border-radius: 1em;
+    border: none;
+    margin: 10px;
+    font-family: fangsong;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(48, 116, 66) , blue);
+}
+.add-movie-form{
+    background-image: linear-gradient(to bottom right, rgb(54, 94, 84) , rgb(17, 138, 84));
+
+}
+.add-movie-form label{
+    color: white;
+    font-family: math;
+}

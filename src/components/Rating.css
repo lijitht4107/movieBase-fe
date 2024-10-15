@@ -1,0 +1,16 @@
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star {
+    cursor: pointer;
+    transition: color 200ms;
+  }
+  

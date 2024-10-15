@@ -1,0 +1,36 @@
+.input-field{
+    border-radius: 2em;
+    border: none;
+    padding: 10px;
+}
+.container{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(100, 105, 80);
+    border-radius: 3em;
+}
+.container label{
+      font:
+    1.2rem 'Fira Sans',
+    sans-serif;
+    padding: 10px;
+}
+.signup-button{
+    width: auto;
+    padding: 10px;
+    margin: 5% 30%;
+    border-radius: 3em;
+    border: none;
+    background-color: rgba(158, 162, 31, 0.784);
+    
+}
+.signup-button:active{
+    background-color: rgb(120, 208, 76);
+    
+}
+input:valid{
+    background-color: rgb(197, 235, 178);
+}
