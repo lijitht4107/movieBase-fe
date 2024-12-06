@@ -13,9 +13,7 @@
     border-radius: 3em;
 }
 .container label{
-      font:
-    1.2rem 'Fira Sans',
-    sans-serif;
+      font: 1.2rem 'Fira Sans', sans-serif;
     padding: 10px;
 }
 .signup-button{

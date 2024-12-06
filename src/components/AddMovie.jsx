@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './Addmovie.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const AddMovie = () => {
+  const navigate = useNavigate()
   const [movieDetails, setMovieDetails] = useState({
     title: "",
     director: "",
@@ -48,7 +50,10 @@ const AddMovie = () => {
         }
       );
 
-      console.log(response.data);
+      console.log(response.data.message);
+      if(response.data.message === "movie added"){
+        navigate('/home')
+      }
     } catch (error) {
       console.log(error);
     }

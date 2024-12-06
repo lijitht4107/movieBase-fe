@@ -37,7 +37,7 @@ const Header = () => {
             <Dropdown.Header>Dropdown header</Dropdown.Header>
             <Dropdown.Item ><Link to="/addmovie">Add Movie</Link></Dropdown.Item>
             <Dropdown.Item as="button">yy</Dropdown.Item>
-            <Dropdown.Item as="button">uu</Dropdown.Item>
+            <Dropdown.Item as="button" onClick={()=>{localStorage.clear()}}>Log out</Dropdown.Item>
            </DropdownButton>
           </li>
         </nav>

@@ -1,0 +1,8 @@
+.movie-list{
+    display: inline-block;
+    background-color: transparent;
+    color: aliceblue;
+    margin: 2%;
+    font-size: 30px;
+    font-family: "Afacad Flux", sans-serif;
+}

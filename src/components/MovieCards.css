@@ -1,4 +1,20 @@
 .card{
     width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Dosis", sans-serif;
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(161, 175, 187);
+}
+.movie-cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
     
+}
+.movie-details{
+    margin-top:10px;
 }

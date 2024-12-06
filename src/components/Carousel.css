@@ -5,3 +5,12 @@
 .carousel img{
     height: 550px;
 }
+.movie-name{
+    font-family: "Orbitron", sans-serif;
+    font-size: 70px;
+    font-weight: 50px;
+    font-style:normal ;
+    background-color:  rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}

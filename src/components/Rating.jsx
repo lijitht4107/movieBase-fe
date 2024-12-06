@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import axios from 'axios';
 import {CircleX} from 'lucide-react'
+import {jwtDecode} from 'jwt-decode'
 import './Rating.css';  // Add your styles here
 
 const Rating = ({ movieId,onClose }) => {
@@ -14,10 +15,15 @@ const Rating = ({ movieId,onClose }) => {
     }
   }
   const submitRating = async (ratingValue) => {
+    const token = localStorage.getItem('token');
+    const decodeToken = jwtDecode(token);
+    console.log(decodeToken.userId);
+
+    
     try {
-      const response = await axios.post('http://localhost:3001/api/rating', {
-        movieId: movieId,
+      const response = await axios.post(`http://localhost:3001/api/ratings/${movieId}`, {
         rating: ratingValue,
+        userId : decodeToken.userId
       });
 
       console.log(response.data);
@@ -49,7 +55,7 @@ const Rating = ({ movieId,onClose }) => {
             <FaStar
               className="star"
               color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-              size={40}
+              size={20}
               onMouseEnter={() => setHover(ratingValue)}
               onMouseLeave={() => setHover(null)}
             />

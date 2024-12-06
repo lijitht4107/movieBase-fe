@@ -1,7 +1,29 @@
+.movie-container{
+    border: solid black .5;
+    border-radius: 10px;
+}
 .onmovieheader{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
     
+}
+.onmovieheader img{
+    width: 40%;
+    border-radius: 10px;
+}
+.back-button,.add-rating{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(202, 206, 209);
+    padding: 3px;
+    margin: 20px;
+}
+.add-rating:active{
+    background-color: rgb(228, 211, 57);
+}
+.sub-nav{
+    display: flex;
+    justify-content: space-between;
 }
